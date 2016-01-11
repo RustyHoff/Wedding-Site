@@ -1,0 +1,97 @@
+#rsvp.my-form-container
+  .ss-form-container
+    .ss-header-image-container
+      .ss-header-image-image
+        .ss-header-image-sizer
+    .ss-top-of-page
+      .ss-form-heading
+        h1.ss-form-title(dir="ltr")
+          | RSVP
+        .ss-form-desc.ss-no-ignore-whitespace(dir="ltr")
+          | Please respond per individual, not per party! Thanks!
+        .ss-required-asterisk(aria-hidden="true")
+          | * Required
+    .ss-form
+      form#ss-form(action="https://docs.google.com/forms/d/1XLqUNgtGpNNIzjLTu714YxKBMHh2FoHwzmgiovJvzbo/formResponse", method="POST", target="_self", onsubmit="")
+        ol.ss-question-list(role="list", style="padding-left: 0")
+          .ss-form-question.errorbox-good(role="listitem")
+            .ss-item.ss-item-required.ss-text(dir="auto")
+              .ss-form-entry
+                label.ss-q-item-label(for="entry_781730004")
+                  #first-name.ss-q-title
+                    | First Name
+                    label(for="itemView.getDomIdToLabel()", aria-label="(Required field)")
+                    span.ss-required-asterisk(aria-hidden="true")
+                      | *
+                  .ss-q-help.ss-secondary-text(dir="auto")
+                input#entry_781730004.ss-q-short(type="text", name="entry.781730004", value="", dir="auto", aria-label="First Name  ", aria-required="true", required="", title="")
+                #1921938991_errorMessage.error-message
+                //
+                   <div class="required-message">
+                                  This is a required question
+                                </div> 
+          .ss-form-question.errorbox-good(role="listitem")
+            .ss-item.ss-item-required.ss-text(dir="auto")
+              .ss-form-entry
+                label.ss-q-item-label(for="entry_1502944917")
+                  .ss-q-title
+                    | Last Name
+                    label(for="itemView.getDomIdToLabel()", aria-label="(Required field)")
+                    span.ss-required-asterisk(aria-hidden="true")
+                      | *
+                  .ss-q-help.ss-secondary-text(dir="auto")
+                input#entry_1502944917.ss-q-short(type="text", name="entry.1502944917", value="", dir="auto", aria-label="Last Name  ", aria-required="true", required="", title="")
+                #1987426892_errorMessage.error-message
+                //
+                   <div class="required-message">
+                                This is a required question
+                              </div> 
+          .ss-form-question.errorbox-good(role="listitem")
+            .ss-item.ss-item-required.ss-radio(dir="auto")
+              .ss-form-entry
+                label.ss-q-item-label(for="entry_915014947")
+                  .ss-q-title
+                    | Will you be attending?
+                    label(for="itemView.getDomIdToLabel()", aria-label="(Required field)")
+                    span.ss-required-asterisk(aria-hidden="true")
+                      | *
+                  .ss-q-help.ss-secondary-text(dir="auto")
+                ul.ss-choices(role="radiogroup", aria-label="Will you be attending?  ")
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_982465222_1.ss-q-radio(type="radio", name="entry.982465222", value="Of course! Someone has to be there to embarass you!", role="radio", aria-label="Of course! Someone has to be there to embarass you!", required="", aria-required="true")
+                      span.ss-choice-label
+                        |  Of course! Someone has to be there to embarass you!
+                  li.ss-choice-item
+                    label
+                      span.ss-choice-item-control.goog-inline-block
+                        input#group_982465222_2.ss-q-radio(type="radio", name="entry.982465222", value="No, we are party poopers!", role="radio", aria-label="No, we are party poopers!", required="", aria-required="true")
+                      span.ss-choice-label
+                        |  No, we are party poopers!
+                #915014947_errorMessage.error-message
+                //
+                   <div class="required-message">
+                              This is a required question
+                            </div> 
+          .ss-form-question.errorbox-good(role="listitem")
+            .ss-item.ss-paragraph-text(dir="auto")
+              .ss-form-entry
+                label.ss-q-item-label(for="entry_172255923")
+                  .ss-q-title
+                    | Any advice on how to put up with each other?
+                  .ss-q-help.ss-secondary-text(dir="auto")
+                textarea#entry_172255923.ss-q-long(name="entry.172255923", rows="8", cols="0", dir="auto", aria-label="Any advice on how to put up with each other?")
+                #446265618_errorMessage.error-message
+          input(type="hidden", name="draftResponse", value="[,,'-4291615247903647858']")
+          input(type="hidden", name="pageHistory", value="0")
+          input(type="hidden", name="fvv", value="0")
+          input(type="hidden", name="fbzx", value="-4291615247903647858")
+          //- reCAPTCHA
+          //- div.g-recaptcha(data-sitekey="6LfJ9BQTAAAAAI8rSo-vXa1JQZw5833kh6Nboy3r")
+          .ss-item.ss-navigate
+            table#navigation-table
+              tbody
+                tr
+                  td#navigation-buttons.ss-form-entry.goog-inline-block(dir="ltr")
+                    input#ss-submit.jfk-button.jfk-button-action(type="submit", name="submit", value="Submit")
