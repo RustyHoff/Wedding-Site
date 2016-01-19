@@ -70,10 +70,38 @@
                       span.ss-choice-label
                         |  No, we are party poopers!
                 #915014947_errorMessage.error-message
-                //
-                   <div class="required-message">
-                              This is a required question
-                            </div> 
+                  //- .required-message This is a required question
+          .ss-form-question.errorbox-good(role="listitem")
+            .ss-item.ss-item-required.ss-select(dir='auto')
+              .ss-form-entry
+                label.ss-q-item-label(for='entry_1693944401')
+                  .ss-q-title
+                    | How many people are you bringing?
+                    label(for='itemView.getDomIdToLabel()', aria-label='(Required field)')
+                      span.ss-required-asterisk(aria-hidden='true') *
+                      .ss-q-help.ss-secondary-text(dir='auto') Do NOT include yourself in this count.
+                      select#entry_1693944401(name='entry.1693944401', aria-label='How many people are you bringing? Do NOT include yourself in this count. ', aria-required='true', required='')
+                        option(value='')
+                          option(value='0') 0
+                          |  
+                          option(value='1') 1
+                          |  
+                          option(value='2') 2
+                          |  
+                          option(value='3') 3
+                          |  
+                          option(value='4') 4
+                          |  
+                          option(value='5') 5
+                          |  
+                          option(value='6') 6
+                          |  
+                          option(value='7') 7
+                          |  
+                          option(value='8') 8
+                          |  
+                          option(value='9') 9
+                          .required-message This is a required question
           .ss-form-question.errorbox-good(role="listitem")
             .ss-item.ss-paragraph-text(dir="auto")
               .ss-form-entry
