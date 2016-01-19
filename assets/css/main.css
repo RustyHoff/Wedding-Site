@@ -611,6 +611,12 @@ header {
         color: #ddd; }
       header nav a:visited {
         color: #ddd; }
+  @media (max-width: 740px) {
+    header h1 {
+      font-size: 7em; } }
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 5em; } }
 
 .hamburger {
   background: rgba(0, 0, 0, 0.7);
@@ -757,7 +763,7 @@ input[type="button"] {
     margin: auto;
     border: none;
     box-shadow: 3px 3px 10px black;
-    width: 640px;
+    max-width: 640px;
     height: 480px; }
   .map h1 {
     font-family: "Poiret One", cursive;
