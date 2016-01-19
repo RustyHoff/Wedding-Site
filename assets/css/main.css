@@ -595,10 +595,10 @@ header {
     bottom: 0px;
     right: 60px; }
     header nav .button {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: black;
       border-color: white; }
       header nav .button:first-child {
-        background-color: rgba(95, 219, 230, 0.7); }
+        background-color: #5fdbe6; }
         header nav .button:first-child a {
           color: black; }
     header nav li {
@@ -619,8 +619,9 @@ header {
       font-size: 5em; } }
 
 .hamburger {
-  background: rgba(0, 0, 0, 0.7);
-  border: 1px solid white;
+  background: black;
+  border: 1px solid;
+  border-color: white;
   width: 35px;
   height: 35px;
   border-radius: 3px;
@@ -668,7 +669,7 @@ header {
           transition: 0.3s ease; }
 
 .my-form-container {
-  background: black url(/assets/img/rsvp-bg2.jpg) repeat top left;
+  background: black url(/assets/img/rsvp-bg.jpg) repeat top left;
   padding-bottom: 50px; }
 
 .ss-form-container {
@@ -755,17 +756,24 @@ input[type="button"] {
     box-shadow: 0px 0px 3px #aaa; }
 
 .map {
-  padding-top: 1px;
   background-image: url(/assets/img/map-bg.jpg);
   background-size: cover;
   text-align: center; }
-  .map .google-map {
+  .map .map-container {
+    padding-top: 1px;
     margin: auto;
-    border: none;
-    box-shadow: 3px 3px 10px black;
-    max-width: 640px;
-    height: 480px; }
-  .map h1 {
-    font-family: "Poiret One", cursive;
-    font-weight: 700;
-    color: white; }
+    max-width: 760px;
+    height: 700px; }
+    .map .map-container .google-map {
+      margin: auto;
+      border: none;
+      max-width: 640px;
+      height: 480px; }
+    .map .map-container h1 {
+      font-family: "Poiret One", cursive;
+      font-weight: 700;
+      color: #505050; }
+
+@media (max-width: 760px) {
+  .google-map {
+    height: 300px; } }

@@ -43,11 +43,15 @@ header
     // right: calc(50% - 361.6725px)
 
     .button
-      background-color: rgba(black, .7)
+      // background-color: rgba(black, .7)
+      background-color: black
       border-color: white
+      // background-color: white
+      // border-color: black
 
       &:first-child
-        background-color: rgba($wedding, .7)
+        // background-color: rgba($wedding, .7)
+        background-color: $wedding
 
         a
           color: black
@@ -63,9 +67,11 @@ header
 
       &:link
         color: $silver
+        // color: black
 
       &:visited
         color: $silver
+        // color: black
 
   @media (max-width: 740px)
     h1
@@ -77,8 +83,15 @@ header
 
 
 .hamburger
-  background: rgba(black, .7)
-  border: 1px solid white
+  // background: rgba(black, .7)
+  background: black
+  border: 1px solid
+  border-color: white
+
+  // Alt Colors
+  // background: white
+  // border-color: black
+
   width: 35px
   height: 35px
   border-radius: 3px
@@ -107,6 +120,10 @@ header
   span
     display: block
     background: white
+
+    //Alt Color
+    // background: black
+
     width: 20px
     height: 2px
     border-radius: 3px
