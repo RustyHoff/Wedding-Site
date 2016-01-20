@@ -611,12 +611,6 @@ header {
         color: #ddd; }
       header nav a:visited {
         color: #ddd; }
-  @media (max-width: 740px) {
-    header h1 {
-      font-size: 7em; } }
-  @media (max-width: 640px) {
-    header h1 {
-      font-size: 5em; } }
 
 .hamburger {
   background: black;
@@ -664,9 +658,47 @@ header {
 
 .nav-items.hidden {
   position: relative;
-  right: -900px;
+  right: -910px;
   -webkit-transition: 0.3s ease;
           transition: 0.3s ease; }
+
+@media (max-width: 960px) {
+  header .button {
+    border-radius: 0; }
+  header nav {
+    width: 100%;
+    margin-left: 60px; }
+  header .nav-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: auto;
+    margin-left: 60px;
+    position: absolute;
+    right: 0;
+    -webkit-padding-start: 0;
+       -moz-padding-start: 0;
+            padding-inline-start: 0;
+    padding: 0;
+    max-width: 840px; } }
+
+@media (max-width: 740px) {
+  header h1 {
+    font-size: 7em; }
+  header h4 {
+    font-size: 2em; } }
+
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 5em; }
+  header h4 {
+    font-size: 1.5em; } }
 
 .my-form-container {
   background: black url(/assets/img/rsvp-bg.jpg) repeat top left;
