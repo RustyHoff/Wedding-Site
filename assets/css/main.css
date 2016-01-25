@@ -809,3 +809,25 @@ input[type="button"] {
 @media (max-width: 760px) {
   .google-map {
     height: 300px; } }
+
+.registry {
+  padding: 1px;
+  height: 100vh;
+  background: #5fdbe6;
+  text-align: center; }
+  .registry .container {
+    background-color: white;
+    max-width: 760px;
+    margin: auto; }
+    .registry .container .reg-item {
+      display: inline-block;
+      margin: 10px 5px;
+      height: 200px;
+      max-width: 25%;
+      width: 100%; }
+    .registry .container .amazon {
+      background-image: url(/assets/img/amazon.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%; }
