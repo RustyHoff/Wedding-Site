@@ -825,9 +825,18 @@ input[type="button"] {
       height: 200px;
       max-width: 25%;
       width: 100%; }
-    .registry .container .amazon {
-      background-image: url(/assets/img/amazon.png);
+    .registry .container .item-logo {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       height: 100%; }
+    .registry .container .item-text {
+      color: #5fdbe6; }
+    .registry .container #amazon {
+      background-image: url(/assets/img/amazon-black.png); }
+    .registry .container #bestbuy {
+      background-image: url(/assets/img/bestbuy-black-w.png); }
+    .registry .container #target {
+      background-image: url(/assets/img/target-black.png); }
+    .registry .container #home-depot {
+      background-image: url(/assets/img/thehomedepot-black.png); }
